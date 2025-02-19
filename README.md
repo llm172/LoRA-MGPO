@@ -1,1 +1,7 @@
-# LoRA-GGPO-
+# LoRA-GGPO
+
+
+## LoRA-GGPO: Mitigating Double Descent in LoRA Fine-Tuning via Gradient-Guided Perturbation Optimization
+
+## Abstract
+Large Language Models (LLMs) have achieved remarkable success in natural language processing, but their full fine-tuning remains resource-intensive. Parameter-Efficient Fine-Tuning (PEFT) methods, such as Low-Rank Adaptation (LoRA), have emerged as a practical solution by approximating parameter updates with low-rank matrices. However, LoRA often exhibits a “double descent” phenomenon during fine-tuning, where model performance degrades due to overfitting and limited expressiveness caused by low-rank constraints. To address this issue, we propose **LoRA-GGPO (Gradient-Guided Perturbation Optimization)**, a novel method that leverages gradient and weight norms to generate targeted perturbations. By optimizing the sharpness of the loss landscape, LoRA-GGPO guides the model toward flatter minima, mitigating the double descent problem and improving generalization. Extensive experiments on natural language understanding (NLU) and generation (NLG) tasks demonstrate that LoRA-GGPO outperforms LoRA and its state-of-the-art variants. Furthermore, extended experiments specifically designed to analyze the double descent phenomenon confirm that LoRA-GGPO effectively alleviates this issue, producing more robust and generalizable models. Our work provides a robust and efficient solution for fine-tuning LLMs, with broad applicability in real-world scenarios.
