@@ -2,6 +2,8 @@
 
 Code for **LoRA-MGPO: Mitigating Double Descent in LoRA Fine-Tuning via Momentum-Guided Perturbation Optimization**.
 
+This work has been accepted to **Findings of EMNLP 2025**.
+
 LoRA-MGPO reuses optimizer momentum states to construct LoRA weight-space perturbations and applies EMA-based adaptive perturbation normalization. The implementation is in `lora_mgpo/`.
 
 ## Installation
