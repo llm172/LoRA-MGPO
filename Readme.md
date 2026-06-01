@@ -54,10 +54,25 @@ This repository builds on code from [nblt/Flat-LoRA](https://github.com/nblt/Fla
 ## Citation
 
 ```bibtex
-@misc{lora_mgpo,
-  title     = {LoRA-MGPO: Mitigating Double Descent in LoRA Fine-Tuning via Momentum-Guided Perturbation Optimization},
-  author    = {Anonymous},
-  year      = {2026},
-  note      = {Manuscript}
+@inproceedings{chang-etal-2025-lora,
+    title = "{L}o{RA}-{MGPO}: Mitigating Double Descent in Low-Rank Adaptation via Momentum-Guided Perturbation Optimization",
+    author = "Chang, Yupeng  and
+      Guo, Chenlu  and
+      Chang, Yi  and
+      Wu, Yuan",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.34/",
+    doi = "10.18653/v1/2025.findings-emnlp.34",
+    pages = "648--659",
+    ISBN = "979-8-89176-335-7"
 }
+
 ```
