@@ -1,0 +1,20 @@
+defaults:
+  - _self_
+  - model: t5base
+dry_run: False
+rho: 0.0
+perturbation_method: none
+mgpo_profile: nlu
+mgpo_mu: null
+mgpo_beta: null
+mgpo_eps: 1e-12
+mgpo_normalize: true
+mgpo_log_steps: 50
+wandb:
+  project: "glue_new"
+  name: null
+hydra:
+  sweeper:
+    params:
+      ++dataset_name: mnli
+      ++seed: 0
