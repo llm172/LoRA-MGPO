@@ -45,28 +45,17 @@ python eval_gsm8k_batch.py results/${your_project}_meta_math/${wandb.name}/42/ch
 
 Additional scripts: `eval_gsm8k.py`, `eval_humaneval.py`, and `eval_mmlu.py`.
 
+## Acknowledgement
+
+This repository builds on code from [nblt/Flat-LoRA](https://github.com/nblt/Flat-LoRA) and [Outsider565/LoRA-GA](https://github.com/Outsider565/LoRA-GA). We thank the authors for releasing their implementations.
+
 ## Citation
 
 ```bibtex
-@inproceedings{chang-etal-2025-lora,
-    title = "{L}o{RA}-{MGPO}: Mitigating Double Descent in Low-Rank Adaptation via Momentum-Guided Perturbation Optimization",
-    author = "Chang, Yupeng  and
-      Guo, Chenlu  and
-      Chang, Yi  and
-      Wu, Yuan",
-    editor = "Christodoulopoulos, Christos  and
-      Chakraborty, Tanmoy  and
-      Rose, Carolyn  and
-      Peng, Violet",
-    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
-    month = nov,
-    year = "2025",
-    address = "Suzhou, China",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2025.findings-emnlp.34/",
-    doi = "10.18653/v1/2025.findings-emnlp.34",
-    pages = "648--659",
-    ISBN = "979-8-89176-335-7",
-    abstract = "Parameter-efficient fine-tuning (PEFT), particularly Low-Rank Adaptation (LoRA), adapts large language models (LLMs) by training only a small fraction of parameters. However, as the rank of the low-rank matrices used for adaptation increases, LoRA often exhibits an unstable ``double descent'' phenomenon, characterized by transient divergence in the training loss, which delays convergence and impairs generalization by causing instability due to the attraction to sharp local minima. To address this, we introduce **LoRA-MGPO**, a framework that incorporates Momentum-Guided Perturbation Optimization (MGPO). MGPO stabilizes training dynamics by mitigating the double descent phenomenon and guiding weight perturbations using momentum vectors from the optimizer{'}s state, thus avoiding dual gradient computations. Additionally, an adaptive normalization scheme scales the magnitude of perturbations based on an exponential moving average (EMA) of gradient norms, further enhancing stability. While EMA controls the magnitude of the perturbations, MGPO guides their direction, ensuring a more stable optimization trajectory. Experiments on a suite of natural language understanding and generation benchmarks show that LoRA-MGPO consistently achieves superior performance over LoRA and other PEFT methods. The analysis indicates that LoRA-MGPO leads to smoother loss curves, faster convergence, and improved generalization by stabilizing the training process and mitigating the attraction to sharp minima. The code is publicly available at [https://github.com/llm172/LoRA-MGPO](https://github.com/llm172/LoRA-MGPO)."
+@misc{lora_mgpo,
+  title     = {LoRA-MGPO: Mitigating Double Descent in LoRA Fine-Tuning via Momentum-Guided Perturbation Optimization},
+  author    = {Anonymous},
+  year      = {2026},
+  note      = {Manuscript}
 }
 ```
